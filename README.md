@@ -55,9 +55,6 @@ BSIT 3-1 Student
 ---
 
 ## Projects
-calculator.c
-array-program.c
-student-management.c
 
 ### Database Systems
 
