@@ -1,57 +1,93 @@
 # Jesse Mina
 
+### BSIT 3-1 Student | Programmer | Network Administration
+
+📧 **Email:** jessemina06@gmail.com  
+💻 **GitHub:** [jessemina06-source](https://github.com/jessemina06-source)
+
+---
+
 ## About Me
 
-I am an Information Technology student who is interested in
-programming, web development, and database management.
-I am currently improving my skills by creating different
-projects and practicing programming.
+I am a Bachelor of Science in Information Technology (BSIT) 3-1
+student with good skills in programming and network administration.
+I enjoy creating systems, working with databases, and solving
+technical problems. I am continuously improving my skills through
+academic projects and programming practice.
+
+---
 
 ## Education
 
-**Bachelor of Science in Information Technology**
+**Bachelor of Science in Information Technology (BSIT)**  
+BSIT 3-1 Student
 
-Currently studying Information Technology.
+---
 
 ## Skills
 
-- C Programming
+### Programming
+- C
 - Python
 - C#
 - HTML
 - CSS
 - SQL
+
+### Database
 - PostgreSQL
-- Git and GitHub
+- Database Management
+- SQL Queries
+- Relational Database
+
+### Networking
+- Network Administration
+- Basic Network Configuration
+- Network Troubleshooting
+
+### Tools
+- Git
+- GitHub
+- GitHub Desktop
+- Visual Studio Code
+- PostgreSQL
+
+---
 
 ## Projects
 
+### Database Systems
+
+Created database systems using PostgreSQL and SQL.
+Worked with tables, queries, relationships, and database management.
+
+### Programming Systems
+
+Developed programming-based systems as part of academic projects.
+Used programming concepts to create solutions for different problems.
+
 ### Student Lost and Found Management System
 
-A system designed to help students report and find lost items
-within their school.
+A proposed system designed to help students report, manage,
+and find lost items within a school.
 
 ### Local Skilled Workers Finder System
 
-A system that helps users find local skilled workers such as
-plumbers, electricians, carpenters, painters, and cleaners.
+A proposed system designed to help users find local skilled workers
+such as plumbers, electricians, carpenters, painters, and cleaners.
 
-## Experience
+---
 
-### Student Projects
+## Career Goal
 
-- Created programming projects using C and Python.
-- Practiced database management using PostgreSQL.
-- Used Git and GitHub for managing project files.
-- Created system concepts for academic projects.
+My goal is to improve my skills in software development, database
+management, and network administration while gaining practical
+experience in the Information Technology field.
 
-## Goals
-
-I want to improve my programming skills and gain more experience
-in software development, databases, and web development.
+---
 
 ## Contact
 
-**Email:** your-email@example.com
+📧 **Email:** jessemina06@gmail.com
 
-**GitHub:** https://github.com/jessemina06-source
+💻 **GitHub:** [jessemina06-source](https://github.com/jessemina06-source)
