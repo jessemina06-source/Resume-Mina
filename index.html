@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jesse Mina | IT Student Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0d0d16;
+            color: #f5f5ff;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 7%;
+            background: rgba(13, 13, 22, 0.95);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            border-bottom: 1px solid #24243a;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav a {
+            color: #aaaac0;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #8d70ff;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 120px 10% 70px;
+            gap: 50px;
+        }
+
+        .hero-text {
+            max-width: 650px;
+        }
+
+        .hello {
+            color: #8d70ff;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 {
+            font-size: 70px;
+            line-height: 1.1;
+            margin-bottom: 15px;
+        }
+
+        .hero h2 {
+            font-size: 26px;
+            color: #ddddee;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            color: #aaaac0;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 25px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            border: 1px solid #8d70ff;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .btn.primary {
+            background: #8d70ff;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            opacity: 0.85;
+        }
+
+        /* Profile */
+        .profile {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            border: 5px solid #8d70ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #191827;
+            box-shadow: 0 0 40px rgba(141, 112, 255, 0.25);
+            flex-shrink: 0;
+        }
+
+        .profile span {
+            font-size: 90px;
+            font-weight: bold;
+            color: #8d70ff;
+        }
+
+        /* Sections */
+        section {
+            padding: 90px 10%;
+            border-top: 1px solid #24243a;
+        }
+
+        section h2 {
+            font-size: 40px;
+            margin-bottom: 25px;
+        }
+
+        section p {
+            color: #aaaac0;
+            max-width: 800px;
+            font-size: 17px;
+        }
+
+        /* Skills */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .skill {
+            background: #191827;
+            border: 1px solid #302d4d;
+            padding: 12px 20px;
+            border-radius: 8px;
+            color: #ddddee;
+        }
+
+        /* Projects */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .project {
+            background: #151522;
+            border: 1px solid #29263f;
+            padding: 25px;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            border-color: #8d70ff;
+        }
+
+        .project h3 {
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            font-size: 15px;
+        }
+
+        /* Contact */
+        .contact-info {
+            margin-top: 25px;
+            font-size: 18px;
+        }
+
+        .contact-info a {
+            color: #8d70ff;
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #77778c;
+            border-top: 1px solid #24243a;
+        }
+
+        /* Mobile */
+        @media (max-width: 800px) {
+            nav {
+                padding: 15px 5%;
+            }
+
+            nav ul {
+                display: none;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding: 130px 7% 70px;
+            }
+
+            .hero h1 {
+                font-size: 50px;
+            }
+
+            .hero h2 {
+                font-size: 21px;
+            }
+
+            .buttons {
+                justify-content: center;
+            }
+
+            .profile {
+                width: 220px;
+                height: 220px;
+            }
+
+            .profile span {
+                font-size: 70px;
+            }
+
+            .projects {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 70px 7%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Jesse Mina</div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Home -->
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+
+            <div class="hello">Hello, I'm</div>
+
+            <h1>Jesse Mina</h1>
+
+            <h2>BSIT 3-1 Student | Programmer | Network Administration</h2>
+
+            <p>
+                I am a Bachelor of Science in Information Technology
+                student interested in programming, databases,
+                network administration, and system development.
+            </p>
+
+            <div class="buttons">
+                <a href="#projects" class="btn primary">
+                    View Projects
+                </a>
+
+                <a href="mailto:jessemina06@gmail.com" class="btn">
+                    Contact Me
+                </a>
+
+                <a href="https://github.com/jessemina06-source"
+                   class="btn"
+                   target="_blank">
+                    GitHub Profile
+                </a>
+            </div>
+
+        </div>
+
+        <div class="profile">
+            <span>JM</span>
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            I am a BSIT 3-1 student with good skills in programming
+            and network administration. I enjoy creating systems,
+            working with databases, solving technical problems,
+            and learning new technologies. Most of my experience
+            comes from academic projects and programming practice.
+        </p>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+
+        <h2>Skills</h2>
+
+        <div class="skills">
+
+            <div class="skill">C Programming</div>
+            <div class="skill">Python</div>
+            <div class="skill">C#</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">SQL</div>
+            <div class="skill">PostgreSQL</div>
+            <div class="skill">Database Management</div>
+            <div class="skill">Network Administration</div>
+            <div class="skill">Network Troubleshooting</div>
+            <div class="skill">Git</div>
+            <div class="skill">GitHub</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects">
+
+        <h2>Projects</h2>
+
+        <div class="projects">
+
+            <div class="project">
+                <h3>Programming Systems</h3>
+
+                <p>
+                    Developed programming-based systems as part
+                    of academic projects using different
+                    programming concepts.
+                </p>
+            </div>
+
+
+            <div class="project">
+                <h3>Database Systems</h3>
+
+                <p>
+                    Created database systems using SQL and
+                    PostgreSQL, including tables, relationships,
+                    queries, and database management.
+                </p>
+            </div>
+
+
+            <div class="project">
+                <h3>Student Lost and Found Management System</h3>
+
+                <p>
+                    A proposed system designed to help students
+                    report, manage, and find lost items within
+                    a school.
+                </p>
+            </div>
+
+
+            <div class="project">
+                <h3>Local Skilled Workers Finder System</h3>
+
+                <p>
+                    A proposed system that helps users find
+                    local skilled workers such as plumbers,
+                    electricians, carpenters, painters, and
+                    cleaners.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Education -->
+    <section id="education">
+
+        <h2>Education</h2>
+
+        <p>
+            <strong>Bachelor of Science in Information Technology</strong>
+            <br>
+            BSIT 3-1 Student
+        </p>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h2>Contact</h2>
+
+        <div class="contact-info">
+
+            <p>
+                Email:
+                <a href="mailto:jessemina06@gmail.com">
+                    jessemina06@gmail.com
+                </a>
+            </p>
+
+            <p>
+                GitHub:
+                <a href="https://github.com/jessemina06-source"
+                   target="_blank">
+                    github.com/jessemina06-source
+                </a>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        © 2026 Jesse Mina. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
