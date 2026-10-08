@@ -55,6 +55,20 @@ a { color: inherit; }
 .wrap { width: min(1080px, 100% - 48px); margin-inline: auto; }
 
 /* Navigation */
+nav a.nav-resume {
+    background: #ffffff;
+    color: #14213d;
+    font-weight: 600;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 0 1px var(--line);
+    padding: 6px 16px;
+    margin-left: 6px;
+}
+nav a.nav-resume:hover {
+    background: var(--amber);
+    border-color: var(--amber);
+    color: #14213d;
+}
 header {
     position: sticky;
     top: 0;
@@ -246,7 +260,7 @@ footer { border-top: 1px solid var(--line); padding: 28px 0; color: var(--muted)
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="Jesse_Mina_CV.pdf" target="_blank" rel="noopener">Resume</a></li>
+                <li><a class="nav-resume" href="Jesse_Mina_CV.pdf" download="Jesse_Mina_CV.pdf">Resume</a></li>
             </ul>
         </nav>
     </div>
